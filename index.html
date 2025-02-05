@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Đặc Sản Bến Tre - Trang Chủ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Animate on Scroll CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Body */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #eef5f3; /* Nền nhạt hơn */
+      color: #333;  /* Màu chữ chính */
+    }
+
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #003366; /* Màu chữ tiêu đề tối hơn */
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://phuotvivu.com/blog/wp-content/uploads/2021/06/b%E1%BA%BFn-tre.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #ffcc00; /* Màu chữ nổi bật hơn cho hero section */
+    }
+
+    .btn-light {
+      background-color: #ff5f00;
+      color: white;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-light:hover {
+      background-color: #e04e00;
+      transform: scale(1.1);
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .logo img {
+      max-height: 120px; /* Increased logo size */
+      object-fit: contain;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Danh Sách Món Ăn */
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      margin-bottom: 30px;
+      background-color: #ffffff;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .card-img-top:hover {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff; /* Nền trắng */
+      color: #003366; /* Màu chữ tiêu đề trong card */
+    }
+
+    .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #003366; /* Màu chữ tiêu đề nổi bật hơn */
+    }
+
+    .card-text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Thêm màu nền cho card */
+    .card-body {
+      background-color: #f5f5f5;  /* Màu nền nền nhạt cho các món ăn */
+    }
+
+    footer {
+      background-color: #eef5f3; /* Phù hợp nền chung */
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <h1 class="logo">
+          <img src="images\logo2.png" alt="Logo Đặc Sản Bến Tre">
+        </h1>
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="keo-dua.html">Kẹo Dừa</a></li>
+            <li><a href="banh-xeo-oc-gao.html">Bánh Xèo Ốc Gạo</a></li>
+            <li><a href="banh-canh-bot-sat.html">Bánh Canh Bột Sắt</a></li>
+            <li><a href="ca-loc-nuong-trui.html">Cá Lóc Nướng Trui</a></li>
+            <li><a href="banh-phong-son-doc.html">Bánh Phồng Sơn Đốc</a></li>
+            <li><a href="canh-chua-ca-linh-bong-so-dua.html">Canh Chua Cá Linh Bông So Đũa</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2 class="display-4 fw-bold">Khám Phá Ẩm Thực Bến Tre</h2>
+      <p class="fs-5">Những món ăn làm say lòng người từ mảnh đất miền Tây thân thương.</p>
+      <a href="#danh-sach-mon-an" class="btn btn-light btn-lg mt-3"><i class="fas fa-utensils"></i> Khám Phá Ngay</a>
+    </div>
+  </section>
+
+  <!-- Danh Sách Món Ăn -->
+  <section id="danh-sach-mon-an" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-5 fw-bold">Món Ăn Đặc Sản Bến Tre</h3>
+      <div class="row">
+        <!-- Món Ăn 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\keodua.jpg" class="card-img-top" alt="Kẹo Dừa">
+            <div class="card-body">
+              <h5 class="card-title">Kẹo Dừa</h5>
+              <p class="card-text">Kẹo truyền thống được làm từ nước cốt dừa tươi, thơm ngọt khó quên.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Món Ăn 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\banh-xeo-oc-gao.jpg" class="card-img-top" alt="Bánh Xèo Ốc Gạo">
+            <div class="card-body">
+              <h5 class="card-title">Bánh Xèo Ốc Gạo</h5>
+              <p class="card-text">Bánh xèo giòn tan kết hợp cùng vị ngọt của ốc gạo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Món Ăn 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\banh-canh-bot-sat.jpg" class="card-img-top" alt="Bánh Canh Bột Sắt">
+            <div class="card-body">
+              <h5 class="card-title">Bánh Canh Bột Sắt</h5>
+              <p class="card-text">Món ăn dân dã với sợi bánh canh đặc biệt từ bột sắt.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Món Ăn 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\ca-loc.jpg" class="card-img-top" alt="Cá Lóc Nướng Trui">
+            <div class="card-body">
+              <h5 class="card-title">Cá Lóc Nướng Trui</h5>
+              <p class="card-text">Món ăn đậm chất miền Tây, cá lóc nướng trui thơm ngon.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Món Ăn 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\banh-phong.jpg" class="card-img-top" alt="Bánh Phồng Sơn Đốc">
+            <div class="card-body">
+              <h5 class="card-title">Bánh Phồng Sơn Đốc</h5>
+              <p class="card-text">Đặc sản truyền thống, giòn tan, thơm mùi dừa đặc trưng.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Món Ăn 6 - Canh Chua Cá Linh Bông So Đũa -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow">
+            <img src="images\canhchua.jpg" class="card-img-top" alt="Canh Chua Cá Linh Bông So Đũa">
+            <div class="card-body">
+              <h5 class="card-title">Canh Chua Cá Linh Bông So Đũa</h5>
+              <p class="card-text">Món canh chua với cá linh và bông so đũa tươi mát.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
